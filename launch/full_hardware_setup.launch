@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<!-- Launch all necessary files to bringup robot. -->
+<launch>
+    <include file="$(find mach1_bringup)/launch/camera_usb_setup.launch"/>
+    <include file="$(find mach1_bringup)/launch/expansion_board_setup.launch"/>
+    <include file="$(find mach1_bringup)/launch/rplidar_setup.launch"/>
+</launch>

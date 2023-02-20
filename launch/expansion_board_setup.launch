@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!-- Set up hardware configurations and start up nodes related to hardware components. -->
+<launch>
+    <group ns="hardware">
+        <rosparam command="load" file="$(find mach1_bringup)/config/expansion_board.yaml"/>
+    </group>
+    <node name="motor_controller_node"          pkg="expansion_board_driver" type="motor_controller.py"/>
+    <node name="fan_controller_node"            pkg="expansion_board_driver" type="fan_controller.py"/>
+    <node name="led_controller_node"            pkg="expansion_board_driver" type="led_controller.py"/>
+    <node name="rear_collision_detector_node"   pkg="expansion_board_driver" type="rear_collision_detector.py"/>
+</launch>

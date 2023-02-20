@@ -1,0 +1,11 @@
+#############################################################################
+## Config file to store important values related to the camera components. ##
+#############################################################################
+
+### USB CAMERA ###
+# camera: dictionary containing fps, camera index,
+# ----------- and name of the camera.
+camera:
+  fps: 30 # Frames per second.
+  index: -1 # Set as -1 to accept any camera index.
+  name: "RPi Camera"

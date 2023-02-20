@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<!-- Setup camera and launch camera feeds -->
+<launch> 
+    <group ns="hardware">
+        <rosparam command="load" file="$(find mach1_bringup)/config/camera_usb.yaml"/>
+    </group>
+    <node name="send_video_feeds" pkg="camera_usb_driver" type="send_video_feeds"/>
+</launch>
