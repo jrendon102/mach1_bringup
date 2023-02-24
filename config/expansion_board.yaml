@@ -35,4 +35,4 @@ rgb_led:
 ultrasonic:
   echo: 0 # Connected to SDA (GPIO pin 0)
   trig: 1 # Connected to SDL (GPIO pin 1)
-  min_dist: 0.08 # Minimum collision distance
+  min_dist: 0.18 # Minimum collision distance

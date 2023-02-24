@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<!-- Set up parameters for joystick teleop configuration. -->
+<launch>
+    <rosparam command="load" file="$(find mach1_bringup)/config/joystick.yaml"/>
+    <remap from="cmd_vel" to="joy_cmd_vel"/>
+    <node name="teleop_twist_node"  pkg="teleop_twist_joy"  type="teleop_node"/>
+    <node name="joy_node"           pkg="joy"               type="joy_node"/>
+</launch>

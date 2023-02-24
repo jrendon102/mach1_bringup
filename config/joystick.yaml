@@ -1,0 +1,32 @@
+######################################################################
+## ---- Config file to store values related to the joystick. ------ ##
+## ---------------------------------------------------------------- ##
+## For more detailed information regarding joystick parameters go - ## 
+## to the following roswiki pages: -------------------------------- ##
+## joy package: http://wiki.ros.org/joy --------------------------- ##
+## teleop_twist_joy package: http://wiki.ros.org/teleop_twist_joy - ##
+######################################################################
+
+### JOY ###
+# joy_node: parameters for joy_node. Most 
+# ----------- are set to default values.
+joy_node:
+  dev: "/dev/input/js0"
+  deadzone: 0.05
+  autorepeat_rate: 25
+  coalesce_interval: 0.001
+  default_trig_val: True
+  dev_ff: "/dev/input/event0"
+
+### TELEOP TWIST JOY ###
+# teleop_twist_node:
+# ----------- Most are set to default values.
+teleop_twist_node:
+  enable_button: 5  # RB button xbox controller
+  enable_turbo_button: -1
+  axis_linear: 1
+  scale_linear: 0.11
+  scale_linear_turbo: 0.7
+  axis_angular: 0
+  scale_angular: 0.15
+  scale_angular_turbo: 0.7

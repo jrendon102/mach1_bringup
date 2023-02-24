@@ -2,7 +2,7 @@
 
 <!-- Set up hardware configurations and start up nodes related to hardware components. -->
 <launch>
-    <group ns="hardware">
+    <group ns="exp_board">
         <rosparam command="load" file="$(find mach1_bringup)/config/expansion_board.yaml"/>
     </group>
     <node name="motor_controller_node"          pkg="expansion_board_driver" type="motor_controller.py"/>
